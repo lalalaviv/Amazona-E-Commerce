@@ -23,11 +23,15 @@ Using Express.js API and configuring it to use Sequelize to interact with a MySQ
 - [Sequelize](https://www.npmjs.com/package/sequelize)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 
-Use the `schema.sql` file in the `db` folder to create your database with MySQL shell commands. Use environment variables to store sensitive data like your MySQL username, password, and database name.
 
 ## Usage
- To use the application locally please clone the repo to your local environment, and change the password in .env file to your MYsql password. 
+ To use the application locally please clone the repo to your local environment, and change the username and password in .env file to your MySQL username and password. 
  <br/>
+ To view database from MySQL run the following command: 
+ ```bash
+ mysql -u root -p
+ ````
+ To seed the database run the following command:
 ```bash
 npm run seed
 ```
@@ -63,23 +67,34 @@ THEN I am able to successfully create, update, and delete data in my database
 
 ## Demonstration
 
+The following video demonstrate how to create the schema from MySQL shell, how to seed the database and start the application from the command line:
+
+![Starting the application with command line](https://user-images.githubusercontent.com/106384519/201514738-f67a8b74-030e-4dd6-b578-d4de9bc30490.mp4)
+
+
 The following animation shows the application's GET routes to return all categories, all products, and all tags being tested in Insomnia:
 
-![In Insomnia, the user tests “GET tags,” “GET Categories,” and “GET All Products.”.](./Assets/13-orm-homework-demo-01.gif)
+![In Insomnia, the user tests “GET tags,” “GET Categories,” and “GET All Products.”.](https://user-images.githubusercontent.com/106384519/201514944-a1ae3462-7fa0-4916-ba6c-74dfd847e494.mp4)
 
 The following animation shows the application's GET routes to return a single category, a single product, and a single tag being tested in Insomnia:
 
-![In Insomnia, the user tests “GET tag by id,” “GET Category by ID,” and “GET One Product.”](./Assets/13-orm-homework-demo-02.gif)
+![In Insomnia, the user tests “GET tag by id,” “GET Category by ID,” and “GET One Product.”](https://user-images.githubusercontent.com/106384519/201515012-0b1d2148-3e8e-4820-8011-74470e595d1f.mp4)
 
 The following animation shows the application's POST, PUT, and DELETE routes for categories being tested in Insomnia:
 
-![In Insomnia, the user tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.”](./Assets/13-orm-homework-demo-03.gif)
+![In Insomnia, the user tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.”](https://user-images.githubusercontent.com/106384519/201515074-0f46a664-54f1-4dba-8441-806a4e5a9910.mp4)
 
-Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia.
+The following animation shows the application's POST, PUT, and DELETE routes for tags being tested in Insomnia:
+
+![In Insomnia, the user tests “DELETE Tag by ID,” “CREATE Tag,” and “UPDATE Tag.”](https://user-images.githubusercontent.com/106384519/201515254-86aba042-dce3-45b6-ac16-66801c4b2cd8.mp4)
+
+The following animation shows the application's POST, PUT, and DELETE routes for products being tested in Insomnia:
+
+![In Insomnia, the user tests “DELETE Product by ID,” “CREATE Product,” and “UPDATE Product.”](https://user-images.githubusercontent.com/106384519/201515187-ffc11a1b-1b9f-4226-baa5-931265fbc38a.mp4)
 
 
 ## License 
-![License](https://img.shields.io/github/license/lalalaviv/e-commerce)
+![License](https://img.shields.io/github/license/lalalaviv/Amazona-E-Commerce)
 
 
 ## Questions
